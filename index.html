@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal" id="filme-principal">
+            <div class="container">
+                <h3 class="titulo" id="titulo">The Umbrella Academy</h3>
+                <p class="descricao" id="descricao"> Com a morte do pai, irmãos com poderes extraordinários se
+                    reencontram e descobrem
+                    surpreendentes segredos de família – além de uma ameaça iminente à humanidade.</p>
+                <div class="botoes">
+                    <button role="button" class="botao" id="botaovideo">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" id="botaoinfo">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h1>Lorem ipsum dolor</h1>
+                            <p>Integer rutrum ac elit eget porttitor. Nam est enim, ullamcorper ut dictum ut, iaculis ac
+                                ipsum. Nullam ac ipsum dignissim, sodales nibh ut, fermentum metus. Nulla dignissim
+                                semper mauris eu lacinia. Duis ut ligula id urna vulputate pellentesque. Integer
+                                dignissim feugiat libero eget ornare. Fusce vel dapibus purus. Fusce volutpat tellus nec
+                                augue consectetur aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse nibh dui, mollis at consectetur et, imperdiet at nunc. Mauris id porttitor
+                                lectus. Cras ultrices sollicitudin volutpat. Vestibulum nec efficitur sem. Sed massa
+                                velit, elementum ac consequat vitae, tincidunt sit amet elit. Suspendisse euismod
+                                accumsan leo. Cras accumsan dictum tellus at aliquet.</p>
+                        </div>
+                    </div>
+                    <div id="myModal2" class="modal2">
+                        <div class="modal-content2">
+                            <span class="close2">&times;</span>
+                            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0DAmWHxeoKw"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item" id="1">
+                <img class=" box-filme" src="img/mini1.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> The Umbrella Academy </div>
+                    <div> Com a morte do pai, irmãos com poderes extraordinários se reencontram e descobrem
+                        surpreendentes segredos de família – além de uma ameaça iminente à humanidade. </div>
+                </div>
+            </div>
+            <div class="item" id="2">
+                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Pokémon The Series: Indigo League </div>
+                    <div> Explore o mundo de Pokémon com Ash e seu parceiro Pikachu em busca do sonho do menino de ser
+                        um mestre Pokémon. </div>
+                </div>
+            </div>
+            <div class="item" id="3">
+                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Star Wars: A Ascensão Skywalker</div>
+                    <div> A Ascensão Skywalker, a fascinante conclusão da saga Skywalker, na qual novas lendas nascerão
+                        e a batalha final pela liberdade ainda está por vir </div>
+                </div>
+            </div>
+            <div class="item" id="4">
+                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Guerra Civil </div>
+                    <div> Capitão América lidera os Vingadores e continuam a proteger o mundo, mas a equipe sofre danos
+                        colaterais. Com o aumento da pressão política que resulta na instituição de um sistema de
+                        responsabilidade e conselho governamental para determinar quando solicitar os serviços da
+                        equipe.
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="5">
+                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> O Hobbit</div>
+                    <div> "A aventura segue a jornada de Bilbo Bolseiro, que é levado à épica missão de retomar a posse
+                        do reino dos anões, Erebor, do dragão Smaug. Abordado inesperadamente pelo mago Gandalf, o
+                        Cinzento, Bilbo se encontra no meio de treze anões liderados pelo guerreiro Thorin
+                        Escudo-de-Carvalho </div>
+                </div>
+            </div>
+            <div class="item" id="6">
+                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Breaking Bad </div>
+                    <div> Narra a história de Walter White (Bryan Cranston), um humilde professor de química que vê sua
+                        vida se transformar quando descobre ser portador de um câncer terminal </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Sobrenatural </div>
+                    <div> A série narra a história de dois irmãos, Sam Winchester e Dean Winchester, interpretados
+                        respectivamente por Jared Padalecki e Jensen Ackles, que caçam demônios, fantasmas, monstros e
+                        outras criaturas sobrenaturais no mundo. </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> House </div>
+                    <div> O cientista House (Hugh Laurie) é especializado em infectologia e nefrologia, realiza
+                        excelentes diagnósticos mantendo uma postura cética, distanciada e até mesmo mau humorada com os
+                        pacientes do fictício hospital de Princeton-Plainsboro. </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Smallville </div>
+                    <div> A série mostra a vida do Superman quando ele ainda era apenas um adolescente, que nem
+                        imaginava os poderes que tinha.</div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="" onClick="renderMovieDesc(this)">
+                <div class="desc">
+                    <div> Vingadores: Guerra Infinita </div>
+                    <div> Thanos (Josh Brolin) enfim chega à Terra, disposto a reunir as Joias do Infinito. Para
+                        enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em
+                        que lidam com desavenças entre alguns de seus integrantes. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

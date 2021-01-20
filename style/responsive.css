@@ -1,0 +1,39 @@
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .modal2{
+        margin-left: 20px;
+        width: 90%;
+        height: 330px;
+    }
+    
+    #video{
+     width: 90%;
+    }
+  
+
+}
+
+@media screen and (max-width:999px) and (min-width:701px){
+    .modal2{
+        justify-self: center;
+        justify-content: center;
+        margin-left: 15%;
+    }
+}
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+    }
+
+
+ 
+}
